@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Shopito</title>
+  <meta name="description" content="insert here the text you want to show on google result description">
+  <link rel="icon" href="img/shopito-favicon.svg">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+  <!-- Slick -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Custom CSS -->
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <div class="d-flex flex-column gap-1">
+        <a class="brand">
+          Shopito
+        </a>
+      </div>
+        
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <input type="checkbox" id="menyAvPaa">
+        <label id="burger" for="menyAvPaa">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav align-items-center gap-4">
+          <li>
+            <a href="#beneficios" data-toggle="collapse" data-target="#navbarSupportedContent">Benefícios</a>
+          </li>
+
+          <li>
+            <a href="#plans" data-toggle="collapse" data-target="#navbarSupportedContent">Planos</a>
+          </li>
+
+          <li>
+            <a href="#step-by-step" data-toggle="collapse" data-target="#navbarSupportedContent">Como começar</a>
+          </li>
+
+          <li>
+            <a href="#reviews" data-toggle="collapse" data-target="#navbarSupportedContent">Avaliações</a>
+          </li>
+
+          <li>
+            <a href="#FAQ" data-toggle="collapse" data-target="#navbarSupportedContent">FAQ</a>
+          </li>
+          
+          <li>
+            <a href="#plans" class="fill-btn small anchor">Ver Planos</a>
+          </li>
+        </ul>
+      </div>
+      
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 header-content">
+          <div class="px-lg-5">
+            <h1 class="mb-3">Impulsione suas vendas locais com nossa plataforma.</h1>
+            <p class="subtitle mb-2rem">
+              Sua loja virtual com pedidos pelo whatsapp e sem taxas por venda.
+              <br/>
+              <br/>
+              <strong>7 dias de teste grátis</strong>
+            </p>
+  
+            <a href="#plans" class="fill-btn anchor">Ver Planos</a>
+          </div>
+        </div>
+  
+        <div class="col-lg-6">
+          <img src="img/header-img.webp" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <!-- Por que usar o Shopito? -->
+  <section class="container" id="beneficios">
+    <div class="row mb-5">
+      <div class="d-flex flex-column align-items-center">
+        <h2 class="text-center mb-2">Por que usar o Shopito?</h2>
+        <div class="line"></div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-4 px-lg-4 text-center mb-5 mb-lg-0">
+        <img src="img/tip-1.svg" height="40px" class="img-fluid d-block mx-auto mb-3">
+        <h4 class="mb-2">Sem Taxas por suas Vendas</h4>
+        <p>Isso mesmo, sem letras míudas não cobramos nada por suas vendas.</p>
+      </div>
+
+      <div class="col-lg-4 px-lg-4 text-center mb-5 mb-lg-0">
+        <img src="img/tip-2.svg" height="40px" class="img-fluid d-block mx-auto mb-3">
+        <h4 class="mb-2">Suporte sem Robôs</h4>
+        <p>De segunda a domingo temos pessoas de verdade para ajudar no que você precisar.</p>
+      </div>
+
+      <div class="col-lg-4 px-lg-4 text-center mb-5 mb-lg-0">
+        <img src="img/tip-3.svg" height="40px" class="img-fluid d-block mx-auto mb-3">
+        <h4 class="mb-2">Cadastramos seus Produtos</h4>
+        <p>
+          Sem tempo para cadastrar produtos? Não se preocupe, nós fazemos isso por você
+          <br/>
+          *Esse serviço tem uma taxa por produto cadastrado.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Para quem é o Shopito -->
+  <section class="container">
+    <div class="row flex-column-reverse flex-lg-row">
+      <div class="col-lg-5">
+        <img src="img/para-quem.webp" class="img-fluid">
+      </div>
+
+      <div class="col-lg-5 offset-lg-2 align-self-center mb-5 mb-lg-0">
+        <h2 class="mb-2">Para quem é o Shopito</h2>
+        <div class="line mb-3"></div>
+        <p>
+          Para você que já vende por direct e whatsapp e quer profissionalizar o seu negócio para expandir suas vendas.
+          <br/>
+          <br/>
+          Para você que quer começar a vender online.
+          <br/>
+          <br/>
+          Para você que tem uma loja online mas está insatisfeita com sua plataforma.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Plans -->
+  <section class="container" id="plans">
+    <div class="row mb-3 mb-lg-5">
+      <div class="d-flex flex-column align-items-center">
+        <h2 class="mb-2">Nossos Planos</h2>
+        <div class="line"></div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-xl-3 d-none d-xl-block text-end mt-auto mb-2rem">
+        <p class="mb-4"><strong>
+          Limite de Produtos Cadastrados
+        </strong></p>
+
+        <p class="mb-4"><strong>
+          Suporte
+        </strong></p>
+
+        <p class="mb-4"><strong>
+          Cadastramos os seus Produtos
+        </strong></p>
+
+        <p class="mb-4"><strong>
+          Painel Administrativo
+        </strong></p>
+
+        <p class="mb-4"><strong>
+          Taxa Zero Sobre as Vendas
+        </strong></p>
+
+        <p><strong>
+          Integração com o Mercado Pago
+        </strong></p>
+      </div>
+
+      <div class="col-lg-4 col-xl-3">
+        <div class="plan mb-5 mb-lg-0">
+          <h3>Simples</h3>
+
+          <div class="d-flex align-items-end">
+            <h4>R$79,90</h4>
+            <p>/mês</p>
+          </div>
+
+          <a href="https://www.asaas.com/c/496598270467" target="_blank" class="fill-btn small">Escolher Plano</a>
+
+          <div class="d-flex flex-column align-items-center gap-4">
+            <p class="d-none d-xl-block"><strong>
+              50
+            </strong></p>
+
+            <p class="d-block d-xl-none"><strong>
+              Cadastre até 50 Produtos
+            </strong></p>
+
+            <p class="d-none d-xl-block"><strong>
+              Segunda a Sexta
+            </strong></p>
+
+            <p class="d-block d-xl-none"><strong>
+              Suporte de Segunda a Sexta
+            </strong></p>
+
+            <img src="img/no.svg" class="img-fluid d-none d-xl-block" alt="Não tem neste plano">
+            
+            <img src="img/yes.svg" class="img-fluid d-none d-xl-block" alt="Incluso no plano">
+            <p class="d-block d-xl-none"><strong>
+              Painel Administrativo
+            </strong></p>
+            
+            <img src="img/yes.svg" class="img-fluid d-none d-xl-block" alt="Incluso no plano">
+            <p class="d-block d-xl-none"><strong>
+              Taxa Zero Sobre as Vendas
+            </strong></p>
+            
+            <img src="img/yes.svg" class="img-fluid d-none d-xl-block" alt="Incluso no plano">
+            <p class="d-block d-xl-none"><strong>
+              Integração com o Mercado Pago
+            </strong></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-xl-3">
+        <div class="plan black mb-5 mb-lg-0">
+          <h3>Intermediário</h3>
+
+          <div class="d-flex align-items-end">
+            <h4>R$249,90</h4>
+            <p>/mês</p>
+          </div>
+
+          <a href="https://www.asaas.com/c/350964474007" target="_blank" class="fill-btn small">Escolher Plano</a>
+
+          <div class="d-flex flex-column align-items-center gap-4">
+            <p class="d-none d-xl-block"><strong>
+              200
+            </strong></p>
+
+            <p class="d-block d-xl-none"><strong>
+              Cadastre até 200 Produtos
+            </strong></p>
+
+            <p><strong>
+              7 dias por semana
+            </strong></p>
+
+            <img src="img/yes.svg" class="img-fluid d-none d-xl-block" alt="Incluso no plano">
+            <p class="d-block d-xl-none"><strong>
+              Cadastramos os seus Produtos
+            </strong></p>
+
+            <img src="img/yes.svg" class="img-fluid d-none d-xl-block" alt="Incluso no plano">
+            <p class="d-block d-xl-none"><strong>
+              Painel Administrativo
+            </strong></p>
+            
+            <img src="img/yes.svg" class="img-fluid d-none d-xl-block" alt="Incluso no plano">
+            <p class="d-block d-xl-none"><strong>
+              Taxa Zero Sobre as Vendas
+            </strong></p>
+            
+            <img src="img/yes.svg" class="img-fluid d-none d-xl-block" alt="Incluso no plano">
+            <p class="d-block d-xl-none"><strong>
+              Integração com o Mercado Pago
+            </strong></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-xl-3">
+        <div class="plan">
+          <h3>Profissional</h3>
+
+          <div class="d-flex align-items-end">
+            <h4>R$349,00</h4>
+            <p>/mês</p>
+          </div>
+
+          <a href="https://www.asaas.com/c/677013998389" target="_blank" class="fill-btn small">Escolher Plano</a>
+
+          <div class="d-flex flex-column align-items-center gap-4">
+            <p class="d-none d-xl-block "><strong>
+              500
+            </strong></p>
+
+            <p class="d-block d-xl-none"><strong>
+              Cadastre até 500 Produtos
+            </strong></p>
+
+            <p><strong>
+              7 dias por semana
+            </strong></p>
+
+            <img src="img/yes.svg" class="img-fluid d-none d-xl-block" alt="Incluso no plano">
+            <p class="d-block d-xl-none"><strong>
+              Cadastramos os seus Produtos
+            </strong></p>
+
+            <img src="img/yes.svg" class="img-fluid d-none d-xl-block" alt="Incluso no plano">
+            <p class="d-block d-xl-none"><strong>
+              Painel Administrativo
+            </strong></p>
+            
+            <img src="img/yes.svg" class="img-fluid d-none d-xl-block" alt="Incluso no plano">
+            <p class="d-block d-xl-none"><strong>
+              Taxa Zero Sobre as Vendas
+            </strong></p>
+            
+            <img src="img/yes.svg" class="img-fluid d-none d-xl-block" alt="Incluso no plano">
+            <p class="d-block d-xl-none"><strong>
+              Integração com o Mercado Pago
+            </strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Risk 0 -->
+  <section id="risk-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 mx-lg-auto">
+          <img src="img/risk-0.svg" height="80px" class="img-fluid d-block mx-auto mb-3">
+
+          <div class="d-flex flex-column align-items-center mb-3">
+            <h2 class="mb-2 text-center">Risco 0! Você ainda tem 7 dias de garantia total.</h2>
+            <div class="line"></div>
+          </div>
+
+          <p>
+            Você pode criar sua loja em poucos minutos, testar nosso suporte e até fazer algumas vendas, e testar tudo isso por 7 dias, mas se ainda sim não quiser continuar com o nosso serviço....
+            <br/>
+            <br/>
+            Você pode enviar uma mensagem para o nosso suporte que cancelamos o serviço
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sua loja pronta em 3 passos -->
+  <section class="container" id="step-by-step">
+    <div class="row">
+      <div class="col-lg-5 align-self-center mb-5 mb-lg-0">
+        <h2 class="mb-2">Sua loja pronta em 3 passos</h2>
+
+        <div class="line mb-5"></div>
+
+        <div class="d-flex gap-4">
+          <div class="step-numb">
+            <img src="img/step-1.svg" alt="Passo 1" class="img-fluid">
+
+            <div></div>
+          </div>
+
+          <div class="mb-2rem">
+            <h3 class="mb-2">Escolha seu plano</h3>
+
+            <p class="mb-3">O melhor plano é aquele que se adequa a quantidade de produtos da sua loja</p>
+
+            <a href="" class="fill-btn small anchor">Ver Planos</a>
+          </div>
+        </div>
+
+        <div class="d-flex gap-4">
+          <div class="step-numb">
+            <img src="img/step-2.svg" alt="Passo 1" class="img-fluid">
+
+            <div></div>
+          </div>
+
+          <div class="mb-2rem">
+            <h3 class="mb-2">Cadastre o seu produto</h3>
+
+            <p>Você pode cadastrar seus produtos, ou se preferir fazemos o cadastro com valor a combinar.</p>
+          </div>
+        </div>
+
+        <div class="d-flex gap-4">
+          <div class="step-numb">
+            <img src="img/step-3.svg" alt="Passo 1" class="img-fluid">
+          </div>
+
+          <div>
+            <h3 class="mb-2">Compartilhe o link da sua loja</h3>
+
+            <p>Divulgue seu link no seu whats, e redes sociais.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-5 offset-lg-2">
+        <img src="img/3-passos.webp" class="img-fluid">
+      </div>
+    </div>
+  </section>
+
+  <!-- Loja Otimizada para smartphones -->
+  <section class="container">
+    <div class="row flex-column-reverse flex-lg-row">
+      <div class="col-lg-5 slider-bg">
+        <div class="slider-shops mb-3">
+          <!-- Loja -->
+          <div class="d-flex flex-column gap-3">
+            <img src="img/shop-1.webp" class="img-fluid mx-auto">
+
+            <a href="https://shopito.com.br/loja/Bicho%20Clube%20-%20Centro%20Veterin%C3%A1rio%20e%20Est%C3%A9tica%20Animal" target="_blank" class="fill-btn small outline mx-auto">
+              Visitar Loja
+            </a>
+          </div>
+
+          <!-- Loja -->
+          <div class="d-flex flex-column gap-3">
+            <img src="img/shop-1.webp" class="img-fluid mx-auto">
+
+            <a href="https://shopito.com.br/loja/Bicho%20Clube%20-%20Centro%20Veterin%C3%A1rio%20e%20Est%C3%A9tica%20Animal" target="_blank" class="fill-btn small outline mx-auto">
+              Visitar Loja
+            </a>
+          </div>
+
+          <!-- Loja -->
+          <div class="d-flex flex-column gap-3">
+            <img src="img/shop-1.webp" class="img-fluid mx-auto">
+
+            <a href="https://shopito.com.br/loja/Bicho%20Clube%20-%20Centro%20Veterin%C3%A1rio%20e%20Est%C3%A9tica%20Animal" target="_blank" class="fill-btn small outline mx-auto">
+              Visitar Loja
+            </a>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-center gap-2">
+          <button class="prev"><i class="fa-solid fa-chevron-left"></i></button>
+          <button class="next"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+      </div>
+
+      <div class="col-lg-5 offset-lg-2 align-self-center mb-5 mb-lg-0">
+        <h2 class="mb-2">Loja Otimizada para smartphones</h2>
+
+        <div class="line mb-3"></div>
+
+        <p>
+          A maioria das compras online vem através de celulares. Se a sua loja não for otimizada para smartphones, você vai perder a 
+          maioria das vendas, mas aqui no Shopito, todo o layout é otimizado. Isso faz com que o visitante do seu site tenha uma experiência 
+          perfeita em seu site e que seu site seja mais rápido e fluido.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quem usa aprova -->
+  <section class="container" id="reviews">
+    <div class="row mb-5">
+      <div class="d-flex flex-column align-items-center">
+        <h2 class="mb-2">Quem usa aprova</h2>
+        <div class="line"></div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <div class="review-card">
+          <div>
+            <div class="d-flex gap-2 mb-2">
+              <img src="img/star.svg">
+              <img src="img/star.svg">
+              <img src="img/star.svg">
+              <img src="img/star.svg">
+              <img src="img/star.svg">
+            </div>
+  
+            <h6 class="mb-1">O suporte não me deixa na mão</h6>
+  
+            <p class="mb-4">Sempre que precisei de ajuda a equipe de atendimento me responde super rápido. E o melhor: não tem aqueles robôs de atendimento.</p>
+          </div>
+        
+          <div class="d-flex align-items-center gap-2">
+            <img height="32px" src="img/review-1.webp">
+
+            <div class="d-flex flex-column">
+              <span><strong>Dr. Vinícius</strong></span>
+              <span style="color: var(--white-4);"><strong>Bicho Clube Centro Veterinário</strong></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <div class="review-card">
+          <div>
+            <div class="d-flex gap-2 mb-2">
+              <img src="img/star.svg">
+              <img src="img/star.svg">
+              <img src="img/star.svg">
+              <img src="img/star.svg">
+              <img src="img/star.svg">
+            </div>
+  
+            <h6 class="mb-1">Meu Tempo é ouro</h6>
+  
+            <p class="mb-4">Já estava cansado de mandar repetidas vezes fotos e valores  dos mesmos produtos para os meus clientes. Agora, em um clique já envio tudo. O cliente não fica mais esperando</p>
+          </div>
+        
+          <div class="d-flex align-items-center gap-2">
+            <img height="32px" src="img/review-2.webp">
+
+            <div class="d-flex flex-column">
+              <span><strong>Valdemar</strong></span>
+              <span style="color: var(--white-4);"><strong>Ponto do Escritório</strong></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="review-card">
+          <div>
+            <div class="d-flex gap-2 mb-2">
+              <img src="img/star.svg">
+              <img src="img/star.svg">
+              <img src="img/star.svg">
+              <img src="img/star.svg">
+              <img src="img/star.svg">
+            </div>
+  
+            <h6 class="mb-1">O cadastro de produtos foi muito rápido</h6>
+  
+            <p class="mb-4">Não tenho tempo para cadastrar produtos no site, a equipe do shopito fez isso por mim. Gostei muito disso.</p>
+          </div>
+        
+          <div class="d-flex align-items-center gap-2">
+            <img height="32px" src="img/review-3.webp">
+
+            <div class="d-flex flex-column">
+              <span><strong>Websley Santigo</strong></span>
+              <span style="color: var(--white-4);"><strong>Biley Importados</strong></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="container" id="FAQ">
+    <div class="row mb-2rem">
+      <div class="col-lg-8 mx-auto">
+        <h2 class="mb-2 text-center">Dúvidas Frequentes</h2>
+
+        <div class="line mx-auto"></div>
+      </div>
+    </div>
+
+    <div class="accordion">
+      <div class="row">
+        <div class="col-lg-6 px-lg-5">
+          <div class="accordion-item">
+            <h4 class="accordion-header" id="heading-1">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="false" aria-controls="collapse-1">
+                <p><strong>Vou pagar taxas sobre minhas vendas</strong></p>
+              </button>
+            </h4>
+            <div id="collapse-1" class="accordion-collapse collapse" aria-labelledby="heading-1" data-bs-parent="#FAQ">
+              <div class="accordion-body">
+                <p>
+                  não cobramos nenhuma taxa por suas vendas
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h4 class="accordion-header" id="heading-2">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+                <p><strong>Quais formas de pagamento posso ter na minha loja virtual?</strong></p>
+              </button>
+            </h4>
+            <div id="collapse-2" class="accordion-collapse collapse" aria-labelledby="heading-2" data-bs-parent="#FAQ">
+              <div class="accordion-body">
+                <p>
+                  Todas: pix, boleto, cartão de crédito
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h4 class="accordion-header" id="heading-3">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
+                <p><strong>Serve para qualquer négocio?</strong></p>
+              </button>
+            </h4>
+            <div id="collapse-3" class="accordion-collapse collapse" aria-labelledby="heading-3" data-bs-parent="#FAQ">
+              <div class="accordion-body">
+                <p>
+                  Sim, para todos que vendem produtos lícitos.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h4 class="accordion-header" id="heading-4">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
+                <p><strong>Como faço o pagamento da mensalidade?</strong></p>
+              </button>
+            </h4>
+            <div id="collapse-4" class="accordion-collapse collapse" aria-labelledby="heading-4" data-bs-parent="#FAQ">
+              <div class="accordion-body">
+                <p>
+                  Pode ser boleto bancário ou cartão de crédito.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 px-lg-5">
+          <div class="accordion-item">
+            <h4 class="accordion-header" id="heading-5">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-5" aria-expanded="false" aria-controls="collapse-5">
+                <p><strong>Tenho um período de teste?</strong></p>
+              </button>
+            </h4>
+            <div id="collapse-5" class="accordion-collapse collapse" aria-labelledby="heading-5" data-bs-parent="#FAQ">
+              <div class="accordion-body">
+                <p>
+                  Sim, teste a plataforma por 7 dias grátis e sem precisar cadastrar cartão de crédito
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h4 class="accordion-header" id="heading-6">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-6" aria-expanded="false" aria-controls="collapse-6">
+                <p><strong>Posso cancelar meu plano?</strong></p>
+              </button>
+            </h4>
+            <div id="collapse-6" class="accordion-collapse collapse" aria-labelledby="heading-6" data-bs-parent="#FAQ">
+              <div class="accordion-body">
+                <p>
+                  Sim, é só enviar uma mensagem no nosso whatsapp para cancelarmos o serviço.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h4 class="accordion-header" id="heading-7">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-7" aria-expanded="false" aria-controls="collapse-7">
+                <p><strong>Terei suporte?</strong></p>
+              </button>
+            </h4>
+            <div id="collapse-7" class="accordion-collapse collapse" aria-labelledby="heading-7" data-bs-parent="#FAQ">
+              <div class="accordion-body">
+                <p>
+                  Sim, o suporte funciona de segunda a sexta de 08:00 às 18:00 Sabádo e domingo de 10:00 às 14:00
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h4 class="accordion-header" id="heading-8">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-8" aria-expanded="false" aria-controls="collapse-8">
+                <p><strong>Quem cadastra os meus produtos?</strong></p>
+              </button>
+            </h4>
+            <div id="collapse-8" class="accordion-collapse collapse" aria-labelledby="heading-8" data-bs-parent="#FAQ">
+              <div class="accordion-body">
+                <p>
+                  A equipe do shopito pode fazer o cadastro, é só enviar um pdf com os produtos a serem cadastrados, esse serviço tem um custo adicional à combinar. Ou se preferir acesse o painel e cadastre você mesmo.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section id="final-cta">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-4 col-xxl-3 offset-xl-2">
+          <h2 class="mb-2rem text-center text-xl-start">Tudo pronto para começar?</h2>
+
+          <a href="#plans" class="fill-btn anchor mx-auto mx-xl-0">Ver Planos</a>
+        </div>
+      </div>
+
+      <img src="img/final-cta.webp" class="img-fluid d-none d-xl-block">
+
+      <img src="img/final-cta-mobile.webp" class="img-fluid d-block d-xl-none">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row justify-content-between pb-5">
+        <div class="col-xl-auto d-flex flex-column justify-content-between mb-5 mb-xl-0">
+          <div class="mb-2rem mb-xl-0">
+            <a class="brand">
+              Shopito
+            </a>
+          </div>
+     
+          <div>
+            <div class="d-flex flex-column gap-3 contacts">
+              <a href="https://api.whatsapp.com/send?phone=5563992425461" target="_blank">
+                <span class="d-flex align-items-center gap-2">
+                  <i class="fa-brands fa-whatsapp"></i>
+                  (63) 99242-5461
+                </span>
+              </a>
+
+              <a href="https://www.google.com/maps/place/Q.+104+Norte+Rua+NE+1,+41+-+Centro,+Palmas+-+TO,+77006-016/@-10.1799636,-48.3235348,15.25z/data=!4m6!3m5!1s0x9324cb5d965bc52d:0xa94b7ea5b629a0ee!8m2!3d-10.1831476!4d-48.3256727!16s%2Fg%2F11hylxbhzr" target="_blank">
+                <span class="d-flex align-items-center gap-2">
+                  <i class="fa-solid fa-location-dot"></i>
+                  Q. 104 Norte Rua NE 1, nº 41 - Centro, Palmas - TO
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-auto d-flex flex-column flex-md-row footer-links-gap mb-5 mb-xl-0">
+          <div>
+            <h4 class="mb-3">Navegação</h4>
+
+            <ul class="nav flex-column">
+              <li>
+                <a href="#beneficios" class="anchor">Benefícios</a>
+              </li>
+    
+              <li>
+                <a href="#plans" class="anchor">Planos</a>
+              </li>
+    
+              <li>
+                <a href="#step-by-step" class="anchor">Como começar</a>
+              </li>
+    
+              <li>
+                <a href="#reviews" class="anchor">Avaliações</a>
+              </li>
+    
+              <li>
+                <a href="#FAQ" class="anchor">FAQ</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="mb-3">Legal</h4>
+
+            <ul class="nav flex-column">
+              <li>
+                <a href="#">Políticas de Privacidade</a>
+              </li>
+    
+              <li>
+                <a href="#">Termos de Uso</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-xl-auto d-flex gap-4">
+          <div class="d-flex gap-4">
+            <a href="https://www.instagram.com/shopito_br/" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="https://www.facebook.com/shopitoBR" target="_blank">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+
+            <a href="https://www.youtube.com/@shopito8880" target="_blank">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex flex-column-reverse flex-md-row justify-content-between align-items-start align-items-lg-center gap-3 copyright">
+        <span>© 2023 Shopito. Todos os direitos reservados.</span>
+
+        <img src="img/site-seguro.webp" alt="Compra segura site protegido certificado SSL" class="img-fluid">
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/navbar-effects.js"></script>
+  <script src="js/slider-config.js"></script>
+
+</body>
+
+</html>
