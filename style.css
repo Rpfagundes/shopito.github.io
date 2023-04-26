@@ -38,7 +38,7 @@ body{
 
 
 /* Typography */
-h1, h2, h3, h4, h5, h6, a, .fill-btn, .subtitle{
+h1, h2, h3, h4, h5, h6, a, .fill-btn, .subtitle, .brand{
 	font-family: 'Nunito', sans-serif;
 }
 
@@ -361,11 +361,13 @@ a:hover, button:hover{
 
 /* Section */
 section{
-	padding: 80px 0;
+	padding-top: 80px;
+	padding-bottom: 80px;
 }
 
 section:first-of-type{
-	padding: 96px 0 80px 0;
+	padding-top: 96px;
+	padding-bottom: 80px;
 }
 
 .grey-bg{
@@ -403,7 +405,6 @@ header img{
 /* Plans */
 #plans p{
 	max-height: 22px;
-	text-align: center;
 }
 
 .plan{
@@ -782,7 +783,7 @@ input.formStep-text-input{
 
 
 /* FAQ */
-section.FAQ{
+section#FAQ{
 	padding-top: 80px;
 	padding-bottom: 160px;
 }
@@ -937,6 +938,30 @@ footer .brand, footer .brand:hover{
 }
 
 
+/* Floating Whatsapp */
+.floating-whats{
+	position:fixed;
+	width: 64px;
+	height: 64px;
+	bottom: 40px;
+	right: 40px;
+	background-color: #25d366;
+	border-radius: 100%;
+  	font-size: 30px;
+	box-shadow: 0px 8px 40px -8px rgba(44, 44, 44, 0.12);
+  	z-index: 100;
+	transition: 300ms;
+}
+
+.floating-whats:hover{
+	background-color: #128c7e;
+}
+
+.floating-whats img{
+	width: 40px;
+}
+
+
 /* Media queries */
 @media (max-width: 1399.98px) {
 	/* Footer */
@@ -955,17 +980,23 @@ footer .brand, footer .brand:hover{
 @media (max-width: 991.98px) {
 	/* Global */
 	section{
-		padding: 64px 0;
+		padding-top: 64px;
+		padding-bottom: 64px;
 	}
 
 	section:first-of-type{
-		padding: 80px 0 64px 0;
+		padding-top: 80px;
+		padding-bottom: 64px;
 	}
 
 	/* Navbar */
 	.navbar-collapse ul {
 		height: 100vh;
-		padding-top: calc(50vh - 253px);
+		padding-top: calc(50vh - 231px);
+	}
+
+	.navbar a{
+		font-size: 1.25rem;
 	}
 
 	/* Header */

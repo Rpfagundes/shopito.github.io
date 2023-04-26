@@ -28,6 +28,10 @@ $('.navbar-toggler').one('click', function() {
 
 $('.collapsed').click(function () {
   $('.navbar').addClass('scrolled');
+  $(".navbar-toggler").click(function () {
+    $("body").toggleClass("overflow-hidden");
+    $("html").toggleClass("overflow-hidden");
+  });
 });
 
 $('.navbar-toggler:not(.collapsed)').click(function () {
