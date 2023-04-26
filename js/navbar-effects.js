@@ -2,6 +2,8 @@ if (window.innerWidth <= 991.98) {
   $('#navbarSupportedContent a').click(function (e) {
     $('#navbarSupportedContent').collapse('toggle');
     $('#menyAvPaa').prop('checked', false);
+    $("body").toggleClass("overflow-hidden");
+    $("html").toggleClass("overflow-hidden");
   });
 }
 
