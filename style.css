@@ -8,6 +8,8 @@ html,body {
 }
 
 body{
+	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
 	background-color: var(--white-1);
 }
 
@@ -1009,6 +1011,13 @@ footer .brand, footer .brand:hover{
 		padding-bottom: 64px;
 	}
 
+	header .img-fluid {
+		max-width: none;
+		position: relative;
+		width: 115%;
+		right: 8%;
+	}
+
 	/* Services */
 	.service-card.flex-lg-column{
 		max-height: 316px;
@@ -1032,6 +1041,12 @@ footer .brand, footer .brand:hover{
 }
 
 @media (max-width: 767.98px) {
+	/* Header */
+	header .img-fluid {
+		width: 150%;
+		right: 25%;
+	}
+
 	/* Services */
 	.service-card img{
 		display: none;
@@ -1061,6 +1076,12 @@ footer .brand, footer .brand:hover{
 		gap: 1rem;
 	}
 
+	header .img-fluid {
+		max-width: none;
+		width: 200%;
+		position: relative;
+		right: 75.5%;
+	}
 
 	/* Footer */
 	.footer-links-gap{
